@@ -28,6 +28,8 @@ void heapify(T a[], int index, int n) {
         currentParent = rightChild;
     }
 
+    
+
     if (index != currentParent) {
         std::swap(a[currentParent], a[index]);
         heapify(a, currentParent, n);
